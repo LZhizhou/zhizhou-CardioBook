@@ -68,7 +68,7 @@ public class AddMeasurements extends AppCompatActivity {
                 String time = ((EditText) findViewById(R.id.measureTime)).getText().toString();
                 String systolic = ((EditText) findViewById(R.id.systolic)).getText().toString();
                 String diastolic = ((EditText)findViewById(R.id.diastolic)).getText().toString();
-                String heartRate = ((EditText)findViewById(R.id.diastolic)).getText().toString();
+                String heartRate = ((EditText)findViewById(R.id.heartRate)).getText().toString();
                 String comment = ((EditText)findViewById(R.id.comment)).getText().toString();
                 if (Integer.valueOf(systolic)<0){
                     Toast.makeText(AddMeasurements.this, "systolic is non-negative",Toast.LENGTH_SHORT).show();
