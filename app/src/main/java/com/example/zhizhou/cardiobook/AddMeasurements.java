@@ -70,23 +70,10 @@ public class AddMeasurements extends AppCompatActivity {
                 String diastolic = ((EditText)findViewById(R.id.diastolic)).getText().toString();
                 String heartRate = ((EditText)findViewById(R.id.heartRate)).getText().toString();
                 String comment = ((EditText)findViewById(R.id.comment)).getText().toString();
-                if (Integer.valueOf(systolic)<0){
-                    Toast.makeText(AddMeasurements.this, "systolic is non-negative",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (Integer.valueOf(diastolic)<0){
-                    Toast.makeText(AddMeasurements.this, "diastolic is non-negative",Toast.LENGTH_SHORT).show();
-                    return;
-                }
 
-                if (Integer.valueOf(heartRate)<0){
-                    Toast.makeText(AddMeasurements.this, "heartRate is non-negative",Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                if (!"".equals(date) && !"".equals(time)&& !"".equals(systolic)&& !"".equals(diastolic)&& !"".equals(heartRate)){
-
-
+                if ("".equals(date) || "".equals(time)|| "".equals(systolic)|| "".equals(diastolic)|| "".equals(heartRate)){
+                    Toast.makeText(AddMeasurements.this, "fill all informations",Toast.LENGTH_SHORT).show();
+                }else{
                     Intent intent = getIntent();
                     Bundle bundle = new Bundle();
 
@@ -101,10 +88,8 @@ public class AddMeasurements extends AppCompatActivity {
                     intent.putExtras(bundle);
                     setResult(0x07, intent);
                     finish();
-
-                }else{
-                    Toast.makeText(AddMeasurements.this, "fill all informations",Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
 
