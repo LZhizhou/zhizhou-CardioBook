@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:text="Systolic:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/systolicSQL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="viewEnd"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:text="Diastolic:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/diastolicSQL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="viewEnd"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:text="HeartRate:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/heartRateSQL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="viewEnd"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dateSQL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="textEnd"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/timeSQL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="5dp"
+            android:textAlignment="textEnd"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/commentSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

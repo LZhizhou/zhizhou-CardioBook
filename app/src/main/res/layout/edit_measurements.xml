@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="systolic pressure in mm Hg"
+
+                />
+
+            <EditText
+                android:id="@+id/systolicEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Systolic Pressue"
+                android:inputType="number"
+                android:text="" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="diastolic pressure in mm Hg"
+
+                />
+
+            <EditText
+                android:id="@+id/diastolicEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter diastolic Pressue"
+                android:inputType="number"
+                android:text="" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="heart rate in beats per minute"
+
+                />
+
+            <EditText
+                android:id="@+id/heartRateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter heart rate"
+                android:inputType="number"
+                android:text="" />
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Measure date"
+
+                 />
+
+            <EditText
+                android:id="@+id/measureDateEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:text="" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Measure time"
+
+                 />
+
+            <EditText
+                android:id="@+id/measureTimeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:text="" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="comment ( to 20 characters)"
+
+                />
+
+            <EditText
+                android:id="@+id/commentEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:hint="Enter Comment"
+                android:maxLength="20"/>
+
+
+        </LinearLayout>
+
