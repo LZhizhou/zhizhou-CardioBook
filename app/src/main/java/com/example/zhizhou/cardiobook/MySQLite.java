@@ -5,9 +5,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
-/**
- * Created by m1511 on 2016/10/16.
- */
 
 class MySQLite extends SQLiteOpenHelper {
     private Context mContext;
